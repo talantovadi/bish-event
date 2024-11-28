@@ -1,0 +1,47 @@
+@media (max-width: 1200px) {
+    .card {
+      flex: 1 1 calc(50% - 20px); /* На десктопах две карточки в ряд */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .header__category {
+      gap: 10px;
+    }
+  
+    .card {
+      flex: 1 1 calc(100% - 20px); /* На планшетах карточки в одну колонку */
+    }
+  
+    .btn-book {
+      font-size: 14px;
+      padding: 8px 16px;
+    }
+  
+    .box {
+      width: 100%; /* Окно бронирования на всю ширину */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .header__category li {
+      font-size: 14px; /* Уменьшен размер текста категорий */
+    }
+  
+    .btn-book {
+      font-size: 12px;
+      padding: 6px 12px;
+    }
+  
+    .card {
+      flex: 1 1 100%; /* На мобильных одна карточка */
+    }
+  
+    footer {
+      font-size: 12px; /* Уменьшен текст футера */
+    }
+  
+    .book-close {
+      font-size: 20px; /* Уменьшена кнопка закрытия */
+    }
+  }

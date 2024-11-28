@@ -1,0 +1,178 @@
+@import url(./fonts.css);
+@import url(./media.css);
+
+/* Base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: 'Poppins', sans-serif;
+}
+body {
+  background-color: #f7f7f7;
+  color: #333;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header styles */
+header {
+  background: linear-gradient(90deg, #4e54c8, #8f94fb);
+  color: white;
+  padding: 20px 0;
+  display: flex;
+}
+header .container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.header__category {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+.header__category li {
+  font-size: 18px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+.header__category li:hover {
+  color: #ffd700;
+}
+.btn-book {
+  background: #ffd700;
+  color: #333;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+  outline: none;
+}
+.btn-book:hover {
+  background: #e6b800;
+}
+
+/* Booking box */
+
+.box{
+  position: relative;
+}
+.boxBook {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 50%;
+  height: 100vh;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  display: none;
+  overflow: scroll;
+  color: #333;
+  /* flex-direction: column; */
+  /* overflow-y: auto; */
+}
+.boxBook.active {
+  display: block;
+}
+.book-close {
+  position: absolute;
+  top: 0px;
+  right: 40px;
+  z-index: 900;
+  color: black;
+}
+.book-close:hover {
+  color: red;
+  cursor: pointer;
+}
+.oneBook {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  gap: 15px;
+  background-color: #f3ea8c;
+  padding: 20px;
+  display: flex;
+}
+.oneBook img {
+  width: 80px;
+  height: 80px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.oneBook button{
+  outline: none;
+  cursor: pointer;
+  background-color: #8f94fb;
+  outline: none;
+  border: none;
+  padding: 5px;
+}
+
+/* Event cards */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+.card {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 300px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+.card:hover {
+  transform: translateY(-10px);
+}
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.card h4 {
+  font-size: 20px;
+  margin: 15px 0;
+}
+.card p {
+  font-size: 14px;
+  color: #555;
+  padding: 0 10px;
+}
+.card button {
+  background: #4e54c8;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-weight: bold;
+  margin: 15px 0;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.card button:hover {
+  background: #3c3fb5;
+}
+
+/* Footer */
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 20px;
+}
+
+
